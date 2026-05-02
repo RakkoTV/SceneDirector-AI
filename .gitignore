@@ -1,0 +1,90 @@
+# OBS Studio Project Gitignore
+# Copyright (c) 2026 Ramiro Silva
+
+# Build outputs
+build/
+*.o
+*.so
+*.dll
+*.dylib
+*.exe
+*.a
+*.lib
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln
+*.vcxproj
+*.vcxproj.filters
+
+# Credentials & Secrets (CRITICAL - NEVER COMMIT THESE)
+*.env
+*.token
+*.key
+*.pem
+credentials.*
+secrets/
+*.credentials
+config_private.*
+.secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.Python
+venv/
+env/
+ENV/
+
+# Lua
+*.luac
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Backup files
+*_backup.*
+*_old.*
+*.backup
+
+# Package files
+*.zip
+*.tar.gz
+*.7z
+*.rar
+dist/
+
+# Test files
+test/
+tests/
+*.test
+
+# Documentation builds
+docs/_build/
+docs/.doctrees/
